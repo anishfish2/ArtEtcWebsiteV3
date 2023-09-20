@@ -15,6 +15,7 @@ const config: Config = {
       },
       screens: {
         '1.5xl': '2000px',  
+        '3xl': '2200px', 
       },
       fontSize: {
         'xxs': '0.5rem', 
@@ -36,6 +37,11 @@ const config: Config = {
         '360': '90rem',
         '380': '95rem',
         '400': '100rem',
+        '420': '105rem',
+        '440': '110rem',
+        '460': '115rem',
+        '480': '120rem',
+        '500': '125rem',
       },
     },
   },
