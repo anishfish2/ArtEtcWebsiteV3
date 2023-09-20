@@ -57,3 +57,7 @@ body {
 .animate-move-horizontal-left {
   animation: move-horizontal-left 5s alternate infinite; 
 }
+
+.custom-cursor {
+  cursor: url('./art/bunny.png') 8 8, auto;
+}

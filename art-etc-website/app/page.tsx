@@ -146,7 +146,7 @@ export default function Home() {
   
   return (
     
-    <div className={`bg-[#F6AF42] flex flex-col justify-between ${gamja.className}`}>
+    <div className={`bg-[#F6AF42] flex flex-col justify-between custom-cursor ${gamja.className}`}>
       
       {/* Container for Images and Buttons */}
       <div className="bg-white p-4 w-screen flex flex-col sm:flex-row items-center justify-between space-y-4">
