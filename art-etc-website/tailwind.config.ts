@@ -14,7 +14,10 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       screens: {
-        '1.5xl': '2000px',  // Customize the breakpoint for screens > 2000px
+        '1.5xl': '2000px',  
+      },
+      fontSize: {
+        'xxs': '0.5rem', 
       },
       spacing: {
         '100': '25rem',
