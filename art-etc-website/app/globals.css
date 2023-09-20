@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes move-horizontal-right {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes move-horizontal-left {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-move-horizontal-right {
+  animation: move-horizontal-right 5s alternate infinite; 
+}
+
+.animate-move-horizontal-left {
+  animation: move-horizontal-left 5s alternate infinite; 
+}

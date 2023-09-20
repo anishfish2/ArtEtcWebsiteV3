@@ -2,74 +2,95 @@ import Image from 'next/image'
 import bunny from './art/bunny.png'
 import artEtcLogo from './art/logo.png'
 import barcode from './art/Art Etc.exe.png'
+import cloud1 from './art/clouds.png'
+import cloud2 from './art/clouds2.png'
+import waves from './art/waves.svg'
 
-import { Gamja_Flower, Poppins } from 'next/font/google'
+import { Gamja_Flower, Istok_Web, Poppins } from 'next/font/google'
 const gamja = Gamja_Flower({ weight: '400', subsets: ['latin'] })
+const istok = Istok_Web({weight: "400", subsets: ['latin']})
 
 
-// export default function Home() {
-//   return (
-//     <div className={`bg-[#F6AF42] h-auto w-screen ${gamja.className}`}>
-//       <div className="bg-[#F6AF42] relative flex flex-row justify-between 2xl:gap-4 xl:mr-8 2xl:mr-8">
-//         <div className="flex flex-row justify-evenly xl:gap-4 pt-8 md:pt-8 xl:pt-12 2xl:pt-20 2xl:gap-4">
-//           <Image className="xl:mt-4 w-8 md:w-20 xl:w-32 2xl:w-52 h-8 md:h-16 xl:h-32 2xl:h-52" src={bunny} alt="bunny :)"></Image>
-//           <Image className="xl:mt-4 w-4 md:w-4 xl:w-8 2xl:w-12 h-12 md:h-24 xl:h-40 2xl:h-80" src={barcode} alt="barcode :)"></Image>
-//         </div>
-//         <div className="flex flex-row  justify-evenly gap-2 md:gap-4 xl:gap-12 pt-12 md:pt-12 2xl:pt-24 text-lg sm:text-4xl md:text-3xl lg-text-5xl xl:text-6xl 2xl:text-8xl xl:mt-12">
-//           <div className="bg-[#79DAAD] border-[#1C975E] border-2 md:border-4 xl:border-4 2xl:border-8 rounded-lg lg:rounded-xl 2xl:rounded-3xl text-[#000000] flex items-center flex-row justify-center h-8 w-20 sm:h-8 sm:w-20 md:w-32 lg:w-40 xl:w-56 2xl:w-96 md:h-12 lg:h-16 2xl:h-32">About Us</div>
-//           <div className="bg-[#F6AF42] border-[#88501D] border-2 md:border-4 xl:border-4 2xl:border-8 rounded-lg lg:rounded-xl 2xl:rounded-3xl text-[#000000] flex items-center flex-row justify-center h-8 w-20 sm:h-8 sm:w-20 md:w-36 lg:w-40 xl:w-56 2xl:w-96 md:h-12 lg:h-16 2xl:h-32">Calendar</div>
-//           <div className="bg-[#F18B9F] border-[#A9364C] border-2 md:border-4 xl:border-4 2xl:border-8 rounded-lg lg:rounded-xl 2xl:rounded-3xl text-[#000000] flex items-center flex-row justify-center h-8 w-20 sm:h-8 sm:w-20 md:w-36 lg:w-40 xl:w-56 2xl:w-96 md:h-12 lg:h-16 2xl:h-32">Showcase</div>
-//           <div className="bg-[#A1BFE0] border-[#456A92] border-2 md:border-4 xl:border-4 2xl:border-8 rounded-lg lg:rounded-xl 2xl:rounded-3xl text-[#000000] flex items-center flex-row justify-center h-8 w-16 sm:h-8 sm:w-20 md:w-28 lg:w-40 xl:w-40 2xl:w-80 md:h-12 lg:h-16 2xl:h-32">Team</div>
-//           <div className="bg-[#ED465F] border-[#771221] border-2 md:border-4 xl:border-4 2xl:border-8 rounded-lg lg:rounded-xl 2xl:rounded-3xl text-[#000000] flex items-center flex-row justify-center h-8 w-16 sm:h-8 sm:w-20 md:w-28 lg:w-40 xl:w-48 2xl:w-80 md:h-12 lg:h-16 2xl:h-32">Gallery</div>
-//         </div>
-//       </div>
-//       <div className="relative flex flex-row justify-end w-auto">
-//         <div className="relative 2xl:ml-80 overflow-hidden">
-//           <div className="absolute ml-140 2xl:ml-240">
-//             <Image className="2xl:w-300 2xl:h-180" src={artEtcLogo} alt="Art Etc Logo :)"></Image>
-//           </div>
-//           <div className="absolute mt-80 w-1/2 2xl:mt-120 ml-180 text-5xl 2xl:text-7xl text-black">
-//               Texas A&M University
-//           </div>
-//           <div className="relative ml-140 mt-100 2xl:mt-140 text-3xl flex flex-row justify-center gap-12">
-//             <div className="bg-[#79DAAD] border-[#1C975E] h-16 w-40 border-4 rounded-3xl text-[#000000] flex items-center flex-row justify-center w-40">Join Us</div>
-//             <div className="bg-[#79DAAD] border-[#1C975E] h-16 w-40 border-4 rounded-3xl text-[#000000] flex items-center flex-row justify-center w-40">About Us</div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
 export default function Home() {
   return (
-    <div className="bg-[#F6AF42] h-auto w-screen">
-      <div className="bg-[#F6AF42] relative flex flex-row justify-between">
-        <div className="flex flex-row justify-evenly gap-[0.25rem] pt-[2rem]">
-          <Image className="w-32 h-32" src={bunny} alt="bunny :)" />
-          <Image className="w-12 h-20" src={barcode} alt="barcode :)" />
+    
+    <div className={`bg-[#F6AF42] flex flex-col justify-between ${gamja.className}`}>
+      {/* Container for Images and Buttons */}
+      <div className="bg-white p-4 rounded-lg w-full max-w-screen-3xl flex flex-col sm:flex-row items-center justify-between space-y-4">
+        {/* Two Images on the Left */}
+        <div className="flex flex-row items-center justify-start space-x-4">
+          <Image
+            src={bunny} 
+            alt="Image 1"
+            className="w-20 h-20 rounded-full"
+          />
+          <Image
+            src={barcode} 
+            alt="Image 2"
+            className="w-10 h-20"
+          />
         </div>
-        <div className="flex flex-row justify-evenly gap-[2rem] pt-[3rem] text-[1rem]">
-          <div className="bg-[#79DAAD] border-[#1C975E] border-4 rounded-lg text-[#000000] flex items-center justify-center w-1/10 h-1/10">About Us</div>
-          <div className="bg-[#F6AF42] border-[#88501D] border-4 rounded-lg text-[#000000] flex items-center justify-center w-1/10 h-1/10">Calendar</div>
-          <div className="bg-[#F18B9F] border-[#A9364C] border-4 rounded-lg text-[#000000] flex items-center justify-center w-1/10 h-1/10">Showcase</div>
-          <div className="bg-[#A1BFE0] border-[#456A92] border-4 rounded-lg text-[#000000] flex items-center justify-center w-1/10 h-1/10">Team</div>
-          <div className="bg-[#ED465F] border-[#771221] border-4 rounded-lg text-[#000000] flex items-center justify-center w-1/10 h-1/10">Gallery</div>
+        
+        {/* Series of Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-evenly space-y-2 sm:space-y-0 sm:space-x-12 text-lg lg:text-4xl xl:text-4xl 2xl:text-7xl">
+          <button className="text-black border-4 bg-[#79DAAD] border-[#1C975E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4">About Us</button>
+          <button className="text-black border-4 bg-[#F6AF42] border-[#88501D] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4">Calendar</button>
+          <button className="text-black border-4 bg-[#F18B9F] border-[#A9364C] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4">Showcase</button>
+          <button className="text-black border-4 bg-[#A1BFE0] border-[#456A92] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4">Team</button>
+          <button className="text-black border-4 bg-[#ED465F] border-[#771221] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4">Gallery</button>
+        
         </div>
       </div>
-      <div className="relative flex flex-row justify-end w-auto">
-        <div className="relative overflow-hidden">
-          <div className="absolute ml-14">
-            <Image className="w-75 h-45" src={artEtcLogo} alt="Art Etc Logo :)" />
+
+      {/* Logo Image */}
+      <div className="flex items-center justify-end mt-16 mr-4">
+        <div className="grid grid-cols-1 text-center text-lg font-bold">
+          <Image
+            src={artEtcLogo} 
+            alt="Your Image"
+            className="max-w-full h-auto"
+          />
+          <p className="text-black text-3xl md:text-6xl tracking-widest pt-8">Texas A&M University</p>
+          <div className="flex justify-center mt-4 pt-4">
+            <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#EF643D] border-[#86280E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8">Join Us</button>
+            <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#A1BFE0] border-[#456A92] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8 mt-2 sm:mt-0">Discord</button>
           </div>
-          <div className="absolute mt-20 w-1/2 ml-18 text-5xl text-black">
-            Texas A&M University
-          </div>
-          <div className="relative ml-14 mt-10 text-3xl flex flex-row justify-center gap-12">
-            <div className="bg-[#79DAAD] border-[#1C975E] border-4 rounded-3xl text-[#000000] flex items-center justify-center w-40 h-64">Join Us</div>
-            <div className="bg-[#79DAAD] border-[#1C975E] border-4 rounded-3xl text-[#000000] flex items-center justify-center w-40 h-64">About Us</div>
-          </div>
+        </div>
+      </div>
+      <div className="relative">
+        <Image
+          src={cloud1} 
+          alt="Image 1"
+          className="animate-move-horizontal-right"
+        />
+        <div className="absolute w-1/2 top-0 left-12 right-0 bottom-0 flex flex-col justify-center items-start text-white font-semibold ">
+          <p className="text-black text-4xl sm:text-6xl lg:text-9xl">About Us</p>
+          <p className={`text-black text-md sm:text-xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        </div>
+      </div>
+
+      <div className="relative overflow-hidden flex flex-row justify-end items-center bottom-0 md:bottom-40 xl:bottom-96">
+        <Image
+          src={cloud2} 
+          alt="Image 1"
+          className="animate-move-horizontal-left relative right-0"
+        />
+        <div className="absolute w-1/2 top-0 right-0 bottom-0 flex flex-col justify-center items-center text-white font-semibold ">
+          <p className="text-black text-4xl sm:text-6xl lg:text-9xl left-40">Schedule</p>
+          <p className={`text-black text-md sm:text-xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+        </div>
+      </div>
+      <div className="relative overflow-hidden">
+        <Image
+          src={waves} 
+          alt="Image 1"
+          className="w-full"
+        />
+        <div className="absolute w-1/2 top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-white font-semibold ">
+          <p className="text-black text-4xl sm:text-6xl lg:text-9xl">Schedule</p>
+          <p className={`text-black text-md sm:text-xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        '1.5xl': '2000px',  // Customize the breakpoint for screens > 2000px
+      },
       spacing: {
         '100': '25rem',
         '120': '30rem',
@@ -25,6 +28,11 @@ const config: Config = {
         '260': '65rem',
         '280': '70rem',
         '300': '75rem',
+        '320': '80rem',
+        '340': '85rem',
+        '360': '90rem',
+        '380': '95rem',
+        '400': '100rem',
       },
     },
   },
