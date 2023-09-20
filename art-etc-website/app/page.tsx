@@ -283,7 +283,7 @@ export default function Home() {
           <ImageSlider2 />
         </div>
       </div>
-      <div className="mt-44 w-screen h-12 flex text-5xl items-center justify-evenly bg-white">
+      <div className="mt-44 w-screen h-12 flex text-md sm:text-5xl items-center justify-evenly bg-white">
         <a href="https://discord.gg/pE7zmZSJ46">Discord</a>
         <a href="https://www.instagram.com/tamuartetc/">Instagram</a>
         <a href="mailto:artetc.tamu@gmail.com">Email</a>
