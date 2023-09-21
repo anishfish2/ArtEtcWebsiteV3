@@ -194,8 +194,12 @@ export default function Home() {
           />
           <p className="text-black text-3xl md:text-6xl tracking-widest pt-8">Texas A&M University</p>
           <div className="flex justify-center mt-4 pt-4">
-            <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#EF643D] border-[#86280E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8">Join Us</button>
-            <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#A1BFE0] border-[#456A92] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8 mt-2 sm:mt-0">Discord</button>
+            <a href="">
+              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#EF643D] border-[#86280E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8">Join Us</button>
+            </a>
+            <a href="https://discord.gg/pE7zmZSJ46">
+              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#A1BFE0] border-[#456A92] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8 mt-2 sm:mt-0">Discord</button>
+            </a>
           </div>
         </div>
       </div>
@@ -252,7 +256,7 @@ export default function Home() {
         <div className="w-3/4 h-100 bg-white rounded-2xl"></div>
       </div>
       <div className="z-2 relative">
-        <p id="Showcase" className="absolute text-white pl-8 top-12 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
+        <p id="showcase" className="absolute text-white pl-8 top-12 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
         <Image
           src={pinkgreenwave} 
           alt="Image 1"
