@@ -211,7 +211,13 @@ export default function Home() {
         />
         <div className="absolute w-1/2 2xl:w-1/3 top-0 left-12 right-0 bottom-0 flex flex-col justify-center items-start text-white font-semibold ">
           <p id="about-us" className="text-black text-4xl sm:text-6xl lg:text-9xl">About Us</p>
-          <p className={`text-black text-sm sm:text-lg md:xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+            <p className={ ` hidden lg:block text-black text-sm sm:text-lg md:xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>
+            Art Etc. is an all-inclusive art organization that welcomes members regardless of religion, identity, major, medium, or art style. We provide our members unique experiences such as figure drawing, painting, origami, and give them the opportunity to display their hard work and creativity through our annual end-of-the-year student art gallery. Art Etc. seeks to create an active network of friendships among TAMU artists and art groups, both within and across disciplines. We hope to aid our members in seeking out collaborative opportunities and strategies, and to create a unified voice and image for TAMU artists.
+
+            </p>
+            <p className={`block lg:hidden text-black text-sm sm:text-lg md:xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>
+              Our mission is to provide a space for all TAMU undergraduate, graduate, and faculty to find their creative freedoms and explore their artistic goals freely.
+            </p>
         </div>
       </div>
 
