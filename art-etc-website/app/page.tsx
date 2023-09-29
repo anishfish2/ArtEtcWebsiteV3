@@ -194,7 +194,7 @@ export default function Home() {
           />
           <p className="text-black text-3xl md:text-6xl tracking-widest pt-8">Texas A&M University</p>
           <div className="flex justify-center mt-4 pt-4">
-            <a href="">
+            <a href="https://tamu.estore.flywire.com/products?storeCatalog=3200">
               <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#EF643D] border-[#86280E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8">Join Us</button>
             </a>
             <a href="https://discord.gg/pE7zmZSJ46">
