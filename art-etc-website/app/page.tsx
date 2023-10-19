@@ -10,7 +10,10 @@ import waves from './art/waves.svg'
 import pinkgreenwave from './art/pinkgreen.svg'
 import line1 from './art/line.svg'
 import showcase from './art/showcase.jpg'
-
+import lily from './art/Lily.jpg'
+import cait from './art/Cait.jpg'
+import taylor from './art/taylor.jpg'
+import anish from './art/anish.png'
 import React from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -23,15 +26,15 @@ const istok = Istok_Web({weight: "400", subsets: ['latin']})
 const istok_bold = Istok_Web({weight: "700", subsets: ['latin']})
 const images = [
   {
-    src: bunny,
+    src: cait,
     description: 'Cait Vu - President',
   },
   {
-    src: bunny,
+    src: taylor,
     description: 'Taylor Rose - Vice President',
   },
   {
-    src: bunny,
+    src: lily,
     description: 'Lily Lee - Director of Outreach',
   },
   {
@@ -39,7 +42,7 @@ const images = [
     description: 'Ashley Graham - Treasurer',
   },
   {
-    src: bunny,
+    src: anish,
     description: 'Anish Karthik - Website man',
   },
 ];
@@ -84,7 +87,7 @@ function ImageGallery() {
             alt={image.description}
             width={300}
             height={200}
-            className="object-cover w-full h-full"
+            className="object-cover w-full rounded-2xl"
           />
           <p className="text-center text-xxs sm:text-lg lg:text-xl xl:text-4xl mt-2">{image.description}</p>
         </div>
