@@ -14,6 +14,19 @@ import lily from './art/Lily.jpg'
 import cait from './art/Cait.jpg'
 import taylor from './art/taylor.jpg'
 import anish from './art/anish.png'
+import art1 from './art/art1.jpg'
+import art2 from './art/art2.jpg'
+import art3 from './art/art3.jpg'
+import art4 from './art/art4.jpg'
+import art5 from './art/art5.jpg'
+import art6 from './art/art6.jpg'
+import art7 from './art/art7.jpg'
+import art8 from './art/art8.jpg'
+import art9 from './art/art9.jpg'
+import art10 from './art/art10.jpg'
+import art11 from './art/art11.jpg'
+import art12 from './art/art12.jpg'
+
 import React from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -48,33 +61,22 @@ const images = [
 ];
 
 const images2 = [
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
+  art1,
+  art2,
+  art3,
+  art4,
+  art5,
+  art6,
 ];
 
 const images3 = [
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
-  bunny,
+  art7,
+  art8,
+  art9,
+  art10,
+  art11,
+  art12,
+
 ];
 
 function ImageGallery() {
@@ -127,7 +129,7 @@ function ImageSlider() {
     <Slider {...settings}>
       {images2.map((image, index) => (
         <div className="" key={index}>
-          <Image src={image} alt={`Image ${index + 1}`} />
+          <Image src={image} className='w-1/2' alt={`Image ${index + 1}`} />
         </div>
       ))}
     </Slider>
@@ -138,8 +140,8 @@ function ImageSlider2() {
   return (
     <Slider {...settings2}>
       {images3.map((image, index) => (
-        <div key={index}>
-          <Image src={image} alt={`Image ${index + 1}`} />
+        <div key={index} className="flex flex-col justify-center items center">
+          <Image src={image} className='w-2/3' alt={`Image ${index + 1}`} />
         </div>
       ))}
     </Slider>
