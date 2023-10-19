@@ -9,6 +9,7 @@ import cloud2 from './art/clouds2.png'
 import waves from './art/waves.svg'
 import pinkgreenwave from './art/pinkgreen.svg'
 import line1 from './art/line.svg'
+import showcase from './art/showcase.jpg'
 
 import React from 'react';
 import Slider from "react-slick";
@@ -19,7 +20,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Gamja_Flower, Istok_Web, Poppins } from 'next/font/google'
 const gamja = Gamja_Flower({ weight: '400', subsets: ['latin'] })
 const istok = Istok_Web({weight: "400", subsets: ['latin']})
-
+const istok_bold = Istok_Web({weight: "700", subsets: ['latin']})
 const images = [
   {
     src: bunny,
@@ -229,7 +230,8 @@ export default function Home() {
         />
         <div className="absolute w-1/2 2xl:w-1/3 top-0 right-0 bottom-0 flex flex-col justify-center items-end text-white font-semibold ">
           <p className="text-black text-4xl sm:text-6xl lg:text-9xl left-0 pr-8">Schedule</p>
-          <p className={`text-black text-sm sm:text-lg md:xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 ${istok.className}`}>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+          <p className={`text-black text-sm sm:text-lg md:xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 text-center ${istok.className}`}>When: Wednesday from 7-8 p.m.</p>
+          <p className={`text-black text-sm sm:text-lg md:xl lg:text-2xl w-full lg:w-2/3 pt-4 lg:pt-12 pr-4 text-center ${istok.className}`}>Location: Horticulture Forest Sciences Building (HFSB) 224</p>
         </div>
       </div>
       <div className="relative overflow-hidden">
@@ -241,38 +243,58 @@ export default function Home() {
         <div className="absolute w-full pt-24 top-0 left-0 right-0 bottom-0 flex flex-row justify-evenly items-center text-white font-semibold ">
           <div className="w-1/2 xl:w-1/2 pt-24 top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-white font-semibold ">
             <p className="text-2xl sm:text-6xl lg:text-7xl 2xl:text-9xl tracking-widest">What we do</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-full lg:w-2/3 pt-4 pb-48 sm:pb-40 md:pb-20 xl:pb-0 ${istok.className}`}>Ooga booga ooga moogoa sosososo lelelelea lisnflsienfl iaesnflasingls indglisdn flskdnflksdn flskdnfl skd nflsknf Ooga booga ooga moogoa sosososo lelelelea lisnflsienfl iaesnflasingls indglisdn flskdnflksdn flskdnfl skd nflsknf Ooga booga ooga moogoa sosososo lelelelea lisnflsienfl iaesnflasingls indglisdn flskdnflksdn flskdnfl skd nflsknf</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-full lg:w-2/3 pt-4 pb-48 sm:pb-40 md:pb-20 xl:pb-0 ${istok.className}`}>Our weekly meetings alternate between General Meetings (which feature a planned activity with provided supplies) and Studio Time Meetings (which is dedicated time to work on your own art/chat with friends/get critiques/study). General Meeting activities range from origami, figure drawing, coffee painting, and more! We will occasionally have socials.</p>
           </div>
           <Image
           src={line1} 
           alt="Image 1"
           className=" h-1/2 mb-20 md:mb-8"
         />
-        <div className="w-1/3 pb-12 top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-white font-semibold ">
+        <div className="h-1/2 w-1/3 flex flex-col text-white font-semibold mb-20 sm:pb-0 overflow-y-scroll">
+          <div className="flex flex-col items-center">
             <p className="text-2xl sm:text-6xl lg:text-7xl 2xl:text-9xl tracking-widest">FAQ</p>
-            <p className={`text-xs sm:text-md md:text-xl lg:text-2xl 2xl:text-3xl w-3/4 lg:w-2/3 pt-4 sm:pt-8 lg:pt-8 ${istok.className}`}>Q: Question 1</p>
-            <p className={`text-xs sm:text-md md:text-xl lg:text-2xl 2xl:text-3xl w-3/4 lg:w-2/3 ${istok.className}`}>A: Question 1</p>
-            <p className={`text-xs sm:text-md md:text-xl lg:text-2xl 2xl:text-3xl w-3/4 lg:w-2/3 pt-4 sm:pt-8 lg:pt-12 ${istok.className}`}>Q: Question 2</p>
-            <p className={`text-xs sm:text-md md:text-xl lg:text-2xl 2xl:text-3xl w-3/4 lg:w-2/3 pb-20 sm:pb-0 ${istok.className}`}>A: Question 2</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Are meetings mandatory/do you take attendance?</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4  ${istok.className}`}>A: Meetings are not mandatory nor is attendance taken. You are welcome to attend the meetings you are interested in. </p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Is there an application process?</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Nope!</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: What do I need to do to be a member?</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4  ${istok.className}`}>A: All you have to do is pay dues!</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Can I still join after dues are due?</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Yes, but you will not get a shirt. You are allowed to attend a meeting past the deadline to see if you like the organization before paying!</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Who can join Art Etc.?</p>
+            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Anyone who is a faculty member, undergraduate, or graduate student at Texas A&M can join. We take anyone regardless of art style, medium, or level of experience.</p>
+          </div>
           </div>
         </div>
         <div id="calendar" className="text-white text-4xl md:text-7xl xl:text-9xl pl-12 tracking-widest">Calendar</div>
       </div>
       <div className="flex flex-col justify-center items-center pt-8">
-        <div className="w-3/4 h-100 bg-white rounded-2xl"></div>
+        <div className="w-3/4 h-full text-xl bg-white text-black rounded-2xl flex items-center justify-center">
+          Under Construction
+        </div>
       </div>
       <div className="z-2 relative">
-        <p id="showcase" className="absolute text-white pl-8 top-12 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
+        <p id="showcase" className="absolute text-white pl-8 top-8 xs:top-20 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
         <Image
           src={pinkgreenwave} 
           alt="Image 1"
           className=" static w-full bg-transparent"
         />
-        <div className="absolute w-full pb-36 sm:pb-80 md:pb-100 lg:pb-140 xl:pb-180 2xl:pb-220 3xl:pb-380 sm:pt-0 xl:pt-0 top-0 left-0 right-0 bottom-0 flex flex-row justify-around items-center text-white font-semibold ">
-          <div className="w-full flex flex-col justify-between items-start text-white font-semibold">
-            <p className={`text-xxs pl-12 sm:pl-8 sm:text-lg lg:text-3xl 2xl:text-5xl w-full sm:w-5/6 pt-0 lg:pt-12 ${istok.className}`}>Ooga booga ooga moogoa sosososo lelelelea lisnflsienfl iaesnflasingls indglisdn flskdnflksdn flskdnfl skd nflsknf Ooga booga ooga moogoa sosososo lelelelea lisnflsienfl iaesnflasingls indglisdn flskdnflksdn flskdnfl skd nflsknf Ooga booga ooga moogoa sosososo lelelelea lisnflsienfl iaesnflasingls indglisdn flskdnflksdn flskdnfl skd nflsknf</p>
+        <div className="absolute w-full sm:pt-0 xl:pt-0 top-0 left-0 right-0 bottom-0 flex flex-row justify-around items-center text-white font-semibold ">
+          <div className="pb-36 xs:pb-60 sm:pb-80 md:pb-80 lg:pb-120 xl:pb-180 2xl:pb-220 3xl:pb-380 w-full flex flex-col justify-between items-start text-white font-semibold">
+            <p className={`text-xxs pl-4 sm:pl-8 sm:text-md md:text-base lg:text-2xl 2xl:text-5xl w-full sm:w-5/6 pt-0 lg:pt-12 ${istok.className}`}>
+              Showcase is our annual end-of-the-year art show in April! This is a chance for our members to show off their hard work and progress! 
+              Only members of Art Etc. can participate. Participation is free and not required. In the past, we have held Showcase 
+              in Rudder Exhibit hall and the Stark Gallery in the MSC! The event is open to the public and you are welcome to invite 
+              your friends and family.</p>
           </div>
-          <div className="w-1/4 h-1/5 bg-white rounded-2xl mr-12"></div>
+          <div className="w-2/3 bg-white rounded-2xl ml-4 mr-4 sm:mr-12 mb-40 xs:mb-80 sm:mb-96 md:mb-100 lg:mb-140 xl:mb-200 2xl:mb-240 3xl:mb-380">
+            <Image
+              src={showcase} 
+              alt="Showcase Image"
+              className=" static w-full bg-transparent rounded-xl border-white border-8"
+            />
+          </div>
         </div>
         <div className="absolute bottom-12 sm:bottom-20 lg:bottom-40 2xl:bottom-120 3xl:bottom-160 w-full">
             <h1 id="team" className="text-xl sm:text-5xl xl:text-9xl sm:pb-12 text-white tracking-widest">Meet The Team</h1>
