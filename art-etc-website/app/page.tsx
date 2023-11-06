@@ -20,8 +20,8 @@ import art2 from './art/art2.jpg'
 import art3 from './art/art3.jpg'
 import art4 from './art/art4.jpg'
 import art5 from './art/art5.jpg'
-import art6 from './art/art6.jpg'
-import art7 from './art/art7.jpg'
+import art6 from './art/art6.png'
+import art7 from './art/art7.png'
 import art8 from './art/art8.jpg'
 import art9 from './art/art9.jpg'
 import art10 from './art/art10.jpg'
@@ -277,7 +277,6 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center pt-8">
         <div className="w-3/4 h-full text-xl bg-white text-black rounded-2xl flex items-center justify-center">
           Under Construction
-        </div>
       </div>
       <div className="z-2 relative">
         <p id="showcase" className="absolute text-white pl-8 top-8 xs:top-20 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
