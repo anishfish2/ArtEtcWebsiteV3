@@ -1,5 +1,5 @@
 'use client'
-
+import Head from 'next/head'
 import Image from 'next/image'
 import bunny from './art/bunny.png'
 import artEtcLogo from './art/logo.png'
@@ -153,8 +153,10 @@ export default function Home() {
   
   return (
     
-    <div className={`bg-[#F6AF42] flex flex-col justify-between custom-cursor ${gamja.className}`}>
-      
+    <div className={`bg-[#F6AF42] flex flex-col justify-between ${gamja.className}`}>
+      <Head>
+        <title>Art Etc.!</title>
+      </Head>
       {/* Container for Images and Buttons */}
       <div className="bg-white p-4 w-screen flex flex-col sm:flex-row items-center justify-between space-y-4">
         {/* Two Images on the Left */}

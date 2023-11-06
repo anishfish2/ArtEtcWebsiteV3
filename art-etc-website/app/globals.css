@@ -58,6 +58,6 @@ body {
   animation: move-horizontal-left 5s alternate infinite; 
 }
 
-.custom-cursor {
-  cursor: url('./art/bunny.png') 8 8, auto;
-}
+/* .custom-cursor {
+  cursor: url('./art/bunny.png') 3 3, auto;
+} */
