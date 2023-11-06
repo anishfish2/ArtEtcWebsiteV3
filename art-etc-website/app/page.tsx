@@ -277,6 +277,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center pt-8">
         <div className="w-3/4 h-full text-xl bg-white text-black rounded-2xl flex items-center justify-center">
           Under Construction
+        </div>
       </div>
       <div className="z-2 relative">
         <p id="showcase" className="absolute text-white pl-8 top-8 xs:top-20 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
