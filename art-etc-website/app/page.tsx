@@ -11,8 +11,9 @@ import pinkgreenwave from './art/pinkgreen.svg'
 import line1 from './art/line.svg'
 import showcase from './art/showcase.jpg'
 import lily from './art/Lily.jpg'
-import cait from './art/Cait.jpg'
+import cait from './art/cait.png'
 import taylor from './art/taylor.jpg'
+import ashley from './art/ashley.jpg'
 import anish from './art/anish.png'
 import art1 from './art/art1.jpg'
 import art2 from './art/art2.jpg'
@@ -51,7 +52,7 @@ const images = [
     description: 'Lily Lee - Director of Outreach',
   },
   {
-    src: bunny,
+    src: ashley,
     description: 'Ashley Graham - Treasurer',
   },
   {
