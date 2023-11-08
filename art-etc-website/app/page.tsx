@@ -129,8 +129,8 @@ function ImageSlider() {
   return (
     <Slider {...settings}>
       {images2.map((image, index) => (
-        <div className="" key={index}>
-          <Image src={image} className='w-1/2' alt={`Image ${index + 1}`} />
+        <div className="bg-black h-100 flex justify-center items-center" key={index}>
+          <Image src={image} className='' alt={`Image ${index + 1}`} />
         </div>
       ))}
     </Slider>
@@ -142,7 +142,7 @@ function ImageSlider2() {
     <Slider {...settings2}>
       {images3.map((image, index) => (
         <div key={index} className="flex flex-col justify-center items center">
-          <Image src={image} className='w-2/3' alt={`Image ${index + 1}`} />
+          <Image src={image} className='bg-black h-100 flex justify-center items-center' alt={`Image ${index + 1}`} />
         </div>
       ))}
     </Slider>
@@ -290,7 +290,7 @@ export default function Home() {
         />
         <div className="absolute w-full sm:pt-0 xl:pt-0 top-0 left-0 right-0 bottom-0 flex flex-row justify-around items-center text-white font-semibold ">
           <div className="pb-36 xs:pb-60 sm:pb-80 md:pb-80 lg:pb-120 xl:pb-180 2xl:pb-220 3xl:pb-380 w-full flex flex-col justify-between items-start text-white font-semibold">
-            <p className={`text-xxs pl-4 sm:pl-8 sm:text-md md:text-base lg:text-2xl 2xl:text-5xl w-full sm:w-5/6 pt-0 lg:pt-12 ${istok.className}`}>
+            <p className={`text-xxs pl-4 sm:pl-8 sm:text-md md:text-base lg:text-2xl 2xl:text-3xl w-full sm:w-5/6 pt-0 lg:pt-12 ${istok.className}`}>
               Showcase is our annual end-of-the-year art show in April! This is a chance for our members to show off their hard work and progress! 
               Only members of Art Etc. can participate. Participation is free and not required. In the past, we have held Showcase 
               in Rudder Exhibit hall and the Stark Gallery in the MSC! The event is open to the public and you are welcome to invite 
@@ -304,10 +304,9 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="absolute bottom-12 sm:bottom-20 lg:bottom-40 2xl:bottom-120 3xl:bottom-160 w-full">
+        <div className="absolute bottom-12 sm:bottom-20 lg:bottom-40 2xl:bottom-100 3xl:bottom-160 first-line:w-full">
             <h1 id="team" className="text-xl sm:text-5xl xl:text-9xl sm:pb-12 text-white tracking-widest">Meet The Team</h1>
               <ImageGallery />
-            
         </div>
         
       </div>
