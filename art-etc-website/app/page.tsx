@@ -67,19 +67,15 @@ const images2 = [
   art1,
   art2,
   art3,
-  art4,
   art5,
   art6,
 ];
 
 const images3 = [
   art7,
-  art8,
   art9,
   art10,
   art11,
-  art12,
-
 ];
 
 function ImageGallery() {
@@ -131,7 +127,7 @@ function ImageSlider() {
   return (
     <Slider {...settings}>
       {images2.map((image, index) => (
-        <div className="h-100 flex flex-col justify-center items-center" key={index}>
+        <div className="h-full flex flex-col justify-center items-center" key={index}>
           <Image src={image} className='' alt={`Image ${index + 1}`} />
         </div>
       ))}
@@ -144,7 +140,7 @@ function ImageSlider2() {
     <Slider {...settings2}>
       {images3.map((image, index) => (
         <div key={index} className="flex flex-col justify-center items center">
-          <Image src={image} className='h-100 flex justify-center items-center' alt={`Image ${index + 1}`} />
+          <Image src={image} className='h-full flex justify-center items-center' alt={`Image ${index + 1}`} />
         </div>
       ))}
     </Slider>
