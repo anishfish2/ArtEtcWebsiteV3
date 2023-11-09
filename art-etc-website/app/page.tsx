@@ -33,6 +33,8 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
 
 import { Gamja_Flower, Istok_Web, Poppins } from 'next/font/google'
 const gamja = Gamja_Flower({ weight: '400', subsets: ['latin'] })
@@ -255,56 +257,38 @@ export default function Home() {
           src={line1} 
           alt="Image 1"
           className=" h-1/2 mb-20 md:mb-8"
-        />
-        <div className="h-1/2 w-1/3 flex flex-col text-white font-semibold mb-20 sm:pb-0 overflow-y-scroll">
-          <div className="flex flex-col items-center">
-            <p className="text-2xl sm:text-6xl lg:text-7xl 2xl:text-9xl tracking-widest">FAQ</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Are meetings mandatory/do you take attendance?</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4  ${istok.className}`}>A: Meetings are not mandatory nor is attendance taken. You are welcome to attend the meetings you are interested in. </p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Is there an application process?</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Nope!</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: What do I need to do to be a member?</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4  ${istok.className}`}>A: All you have to do is pay dues!</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Can I still join after dues are due?</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Yes, but you will not get a shirt. You are allowed to attend a meeting past the deadline to see if you like the organization before paying!</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Who can join Art Etc.?</p>
-            <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Anyone who is a faculty member, undergraduate, or graduate student at Texas A&M can join. We take anyone regardless of art style, medium, or level of experience.</p>
-          </div>
+          />
+          <div className="h-1/2 w-1/3 flex flex-col text-white font-semibold mb-20 sm:pb-0 overflow-y-scroll">
+            <div className="flex flex-col items-center">
+              <p className="text-2xl sm:text-6xl lg:text-7xl 2xl:text-9xl tracking-widest">FAQ</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Are meetings mandatory/do you take attendance?</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4  ${istok.className}`}>A: Meetings are not mandatory nor is attendance taken. You are welcome to attend the meetings you are interested in. </p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Is there an application process?</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Nope!</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: What do I need to do to be a member?</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4  ${istok.className}`}>A: All you have to do is pay dues!</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Can I still join after dues are due?</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Yes, but you will not get a shirt. You are allowed to attend a meeting past the deadline to see if you like the organization before paying!</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 pt-4 sm:pt-8 lg:pt-12 ${istok_bold.className}`}>Q: Who can join Art Etc.?</p>
+              <p className={`text-xxs sm:text-xs md:text-xs lg:text-xl 2xl:text-3xl w-3/4 ${istok.className}`}>A: Anyone who is a faculty member, undergraduate, or graduate student at Texas A&M can join. We take anyone regardless of art style, medium, or level of experience.</p>
+            </div>
           </div>
         </div>
-        <div id="calendar" className="text-white text-4xl md:text-7xl xl:text-9xl pl-12 tracking-widest">Calendar</div>
+      <div id="calendar" className="text-white text-4xl md:text-7xl xl:text-9xl pl-12 tracking-widest">Calendar</div>
       </div>
-      <div className="flex flex-col justify-center items-center pt-8">
-        
-        <div className="w-3/4 h-full text-xl bg-white text-black rounded-2xl flex items-center justify-center">
-          <h1>February 2022</h1>
-          <ul>
-            <li><time dateTime="2022-02-01">1</time>Dark Chocolate Day</li>
-            <li><time dateTime="2022-02-02">2</time>Groundhog Day</li>
-            <li><time dateTime="2022-02-03">3</time>Carrot Cake Day</li>
-            <li><time dateTime="2022-02-04">4</time>Wear Red Day</li>
-            <li><time dateTime="2022-02-06">6</time>Chopsticks Day</li>
-            <li><time dateTime="2022-02-07">7</time>Periodic Table Day</li>
-            <li><time dateTime="2022-02-08">8</time>Kite Flying Day</li>
-            <li><time dateTime="2022-02-09">9</time>Pizza Day</li>
-            <li><time dateTime="2022-02-10">10</time>Umbrella Day</li>
-            <li><time dateTime="2022-02-12">12</time>Global Movie Day</li>
-            <li><time dateTime="2022-02-13">13</time>Tortellini Day</li>
-            <li><time dateTime="2022-02-15">15</time>Gumdrop Day</li>
-            <li><time dateTime="2022-02-16">16</time>Do a Grouch a Favor Day</li>
-            <li><time dateTime="2022-02-17">17</time>Cabbage Day</li>
-            <li><time dateTime="2022-02-18">18</time>Battery Day</li>
-            <li className="today"><time dateTime="2022-02-19">19</time>Chocolate Mint Day</li>
-            <li><time dateTime="2022-02-20">20</time>Love Your Pet Day</li>
-            <li><time dateTime="2022-02-22">22</time>Cook a Sweet Potato Day</li>
-            <li><time dateTime="2022-02-23">23</time>Tile Day</li>
-            <li><time dateTime="2022-02-24">24</time>Toast Day</li>
-            <li><time dateTime="2022-02-25">25</time>Clam Chowder Day</li>
-            <li><time dateTime="2022-02-26">26</time>Pistachio Day</li>
-            <li><time dateTime="2022-02-27">27</time>Polar Bear Day</li>
-            <li><time dateTime="2022-02-28">28</time>Tooth Fairy Day</li>
-          </ul>
+      <div className="w-full h-full pt-8 flex flex-col justify-center items-center">
+        <div className="w-4/5">
+        <FullCalendar
+          plugins={[ dayGridPlugin ]}
+          initialView="dayGridMonth"
+          events={[
+            { title: 'Sunday Tie Dye 2:00 PM', date: '2023-11-12' },
+            { title: 'Studio Time', date: '2023-11-15' },
+            { title: 'Thanksgiving Potluck', date: '2023-11-29' },
+          ]}
+        />
         </div>
+        
       </div>
       <div className="z-2 relative">
         <p id="showcase" className="absolute text-white pl-8 top-8 xs:top-20 sm:top-32 2xl:top-64 text-3xl sm:text-6xl lg:text-9xl tracking-widest">Showcase</p>
