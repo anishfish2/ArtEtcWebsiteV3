@@ -149,14 +149,12 @@ function ImageSlider2() {
   );
 }
 
+
 export default function Home() {
   
   return (
     
     <div className={`bg-[#F6AF42] flex flex-col justify-between ${gamja.className}`}>
-      <Head>
-        <title>Art Etc.!</title>
-      </Head>
       {/* Container for Images and Buttons */}
       <div className="bg-white p-4 w-screen flex flex-col sm:flex-row items-center justify-between space-y-4">
         {/* Two Images on the Left */}
@@ -285,23 +283,19 @@ export default function Home() {
             <li><time dateTime="2022-02-02">2</time>Groundhog Day</li>
             <li><time dateTime="2022-02-03">3</time>Carrot Cake Day</li>
             <li><time dateTime="2022-02-04">4</time>Wear Red Day</li>
-            <li><time dateTime="2022-02-05">5</time>Weatherperson's Day</li>
             <li><time dateTime="2022-02-06">6</time>Chopsticks Day</li>
             <li><time dateTime="2022-02-07">7</time>Periodic Table Day</li>
             <li><time dateTime="2022-02-08">8</time>Kite Flying Day</li>
             <li><time dateTime="2022-02-09">9</time>Pizza Day</li>
             <li><time dateTime="2022-02-10">10</time>Umbrella Day</li>
-            <li><time dateTime="2022-02-11">11</time>Inventor's Day</li>
             <li><time dateTime="2022-02-12">12</time>Global Movie Day</li>
             <li><time dateTime="2022-02-13">13</time>Tortellini Day</li>
-            <li><time dateTime="2022-02-14">14</time>Valentine's Day</li>
             <li><time dateTime="2022-02-15">15</time>Gumdrop Day</li>
             <li><time dateTime="2022-02-16">16</time>Do a Grouch a Favor Day</li>
             <li><time dateTime="2022-02-17">17</time>Cabbage Day</li>
             <li><time dateTime="2022-02-18">18</time>Battery Day</li>
             <li className="today"><time dateTime="2022-02-19">19</time>Chocolate Mint Day</li>
             <li><time dateTime="2022-02-20">20</time>Love Your Pet Day</li>
-            <li><time dateTime="2022-02-21">21</time>President's Day</li>
             <li><time dateTime="2022-02-22">22</time>Cook a Sweet Potato Day</li>
             <li><time dateTime="2022-02-23">23</time>Tile Day</li>
             <li><time dateTime="2022-02-24">24</time>Toast Day</li>
