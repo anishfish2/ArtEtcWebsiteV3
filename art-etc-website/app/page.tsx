@@ -139,8 +139,8 @@ function ImageSlider2() {
   return (
     <Slider {...settings2}>
       {images3.map((image, index) => (
-        <div key={index} className="flex flex-col justify-center items center">
-          <Image src={image} className='h-full flex justify-center items-center' alt={`Image ${index + 1}`} />
+        <div key={index} className="h-full flex flex-col justify-center items center">
+          <Image src={image} className='' alt={`Image ${index + 1}`} />
         </div>
       ))}
     </Slider>
