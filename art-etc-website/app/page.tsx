@@ -281,9 +281,17 @@ export default function Home() {
           plugins={[ dayGridPlugin ]}
           initialView="dayGridMonth"
           events={[
-            { title: 'Sunday Tie Dye 2:00 PM', date: '2023-11-12' },
-            { title: 'Studio Time', date: '2023-11-15' },
-            { title: 'Thanksgiving Potluck', date: '2023-11-29' },
+            { title: 'First Meeting - Icebreakers!', date: '2024-01-24' },
+            { title: 'Studio Time', date: '2024-01-31' },
+            { title: 'Figure Drawing', date: '2024-02-07' },
+            { title: 'Studio Time', date: '2024-02-14' },
+            { title: 'Macaroni Art + Jewlery + Beads!', date: '2024-02-21' },
+            { title: 'Studio Time', date: '2024-02-28' },
+            { title: 'Studio Time', date: '2024-03-20' },
+            { title: 'Showcase!', date: '2024-04-03' },
+            { title: 'Drawing at Aggie Park!', date: '2024-04-10' },
+            { title: 'Studio Time', date: '2024-04-17' },
+            { title: 'Potluck!', date: '2024-04-24' },
           ]}
         />
         </div>
