@@ -198,15 +198,15 @@ export default function Home() {
             className="max-w-full h-auto"
           />
           <p className="text-black text-3xl md:text-6xl tracking-widest pt-8">Texas A&M University</p>
-          <div className="flex justify-center mt-4 pt-4">
+          <div className="flex justify-center mt-4 pt-4 ">
             <a href="https://tamu.estore.flywire.com/products?storeCatalog=3200">
-              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#EF643D] border-[#86280E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8">Join Us</button>
+              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#EF643D] border-[#86280E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 sm:px-4 xs:mx-8">Join Us</button>
             </a>
             <a href="https://discord.gg/pE7zmZSJ46">
-              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#A1BFE0] border-[#456A92] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8 mt-2 sm:mt-0">Discord</button>
+              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#A1BFE0] border-[#456A92] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 sm:px-4 xs:mx-8 ">Discord</button>
             </a>
             <a href="https://groupme.com/join_group/97487867/ihjJIDTt">
-              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#79DAAD] border-[#1C975E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 px-4 mx-8 mt-2 sm:mt-0">GroupMe</button>
+              <button className="text-[#FFFFFF] tracking-widest text-xl md:text-3xl border-4 bg-[#79DAAD] border-[#1C975E] hover:border-blue-500 focus:border-black focus:text-white focus:bg-black transition duration-300 ease-in-out rounded-xl py-2 sm:px-4 xs:mx-8">GroupMe</button>
             </a>
           </div>
         </div>
