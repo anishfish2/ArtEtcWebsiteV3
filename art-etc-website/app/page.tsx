@@ -287,6 +287,8 @@ export default function Home() {
             { title: 'Studio Time', date: '2024-02-14' },
             { title: 'Macaroni Art + Jewlery + Beads!', date: '2024-02-21' },
             { title: 'Studio Time', date: '2024-02-28' },
+            { title: 'Big Event Registration Deadline', date: '2024-02-29'},
+            { title: 'Officer Election Signup Deadline', date: '2024-02-29'},
             { title: 'Studio Time', date: '2024-03-20' },
             { title: 'Showcase!', date: '2024-04-03' },
             { title: 'Drawing at Aggie Park!', date: '2024-04-10' },
