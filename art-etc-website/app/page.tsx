@@ -59,7 +59,7 @@ const images = [
   },
   {
     src: anish,
-    description: 'Anish Karthik - Website man',
+    description: 'Anish Karthik - Website person',
   },
 ];
 
